@@ -1,12 +1,13 @@
 
 library(shiny)
 
+need_pkg <- c("devtools", "dplyr", "DT")
+has <- need_pkg %in% rownames(installed.packages())
+if(any(!has)) install.packages(need_pkg[!has])
+
 devtools::install_github("Sanggeun/chs")
 library(chs)
 
-need_pkg <- c("dplyr", "DT")
-has <- need_pkg %in% rownames(installed.packages())
-if(any(!has)) install.packages(need_pkg[!has])
 
 library(dplyr)
 library(DT)
