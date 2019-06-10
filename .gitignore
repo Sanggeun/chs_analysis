@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+.gitinore
+chs_analysis.Rproj
